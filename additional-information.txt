@@ -1,0 +1,46 @@
+Container Class
+
+It is just a class that have access directly to the Application State (Redux).
+
+
+More Info
+
+	REACT-REDUX
+
+	React and Redux are not at all connected. They are a totally separed projects and to connect them we need to use a specific library named ReactRedux.
+
+	So, you must to import a special ccomponent named 'connect' from react-redux.
+
+		import { connect } from 'react-redux';
+
+	Then, you need to use this component into the container class. Here we won't export the class, instead of it we will create a function named 'mapStateToProps' that will receive the 'application state' as a parameter. Whatever is returned will show up as props inside of BookList. 
+	EVERYTIME the application state changes, this method is called!
+
+		function mapStateToProps(state) {
+			return {
+				books = state.books;
+			};
+		}
+
+	Finnaly, remember that we are not using the 'export default' directly into our component (in this case the 'container class') anymore.
+	However we yet must to export our component ('container class'), using the 'connect' component from 'react-redux'. Here we will also connect our container class with the function used to connect the application state to the class props (mapSteteToProps).
+
+	This is the snippet of code that produces the 'container class'.
+
+		export default connect(mapStateToProps)(BooksList);
+
+	Involved files:
+		/reducers/reducer_books.js
+			It is our application state data. 
+
+		
+		/reducers/index.js
+			It is the file that combines the application state data to a state name. 
+
+			BooksReduce -> books
+
+		/containers/books-list.js
+			It is our container class component. 
+
+		/components/app.js
+			Just render the books-list.js.
