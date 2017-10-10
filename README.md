@@ -6,10 +6,10 @@
 This is my First React Project using Redux. I have reached it, through the udemy course Modern React With Redux. Try it yourself. 
 
 This project Covers:
->> Containers
->> Reducers / combineReducers
->> ActionCreators 
->> Actions
+* Containers
+* Reducers / combineReducers
+* ActionCreators 
+* Actions
 
 I've committed the code lecture by lecture, so if you have any issue you can check all the commits, its descriptions and the code differences. 
 
