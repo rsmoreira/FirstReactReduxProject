@@ -1,7 +1,7 @@
 > This is a copy of the Stephen Grider repository named ReduxSimpleStarter. 
 > Thanks Stephen.
 
-# FirstReactReduxProject
+# React Redux - Managing App State
 
 This is my First React Project using Redux. I have reached it, through the udemy course Modern React With Redux, section 4. Try it yourself. 
 
