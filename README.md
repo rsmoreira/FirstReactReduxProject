@@ -3,7 +3,7 @@
 
 # FirstReactReduxProject
 
-This is my First React Project using Redux. I have reached it, through the udemy course Modern React With Redux. Try it yourself. 
+This is my First React Project using Redux. I have reached it, through the udemy course Modern React With Redux, section 4. Try it yourself. 
 
 This project Covers:
 * Containers
